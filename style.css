@@ -1,0 +1,131 @@
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(212, 45%, 89%);
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+main {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10%;
+  border-radius: 4%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+main figure {
+  margin: 0;
+}
+
+main #perfume-image {
+  content: url(./images/image-product-mobile.jpg);
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 4%;
+  border-top-left-radius: 4%;
+  margin-bottom: 6%;
+}
+
+#text-perfume #perfume {
+  font-family: Montserrat, Arial;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+#text-perfume {
+  margin: 0 25px 25px 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#text-perfume h1 {
+  font-family: Fraunces, Arial;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+#text-perfume p {
+  font-family: Montserrat, Arial;
+  color: hsl(228, 12%, 48%);
+  margin: 0 0 25px 0;
+}
+
+#text-perfume #discounted-price {
+  font-family: Fraunces, Arial;
+  color: hsl(158, 36%, 37%);
+  display: inline-block;
+  font-size: 32px;
+}
+
+#text-perfume #mrp {
+  display: inline-block;
+  text-decoration: line-through;
+  align-self: center;
+  margin-left: 25px;
+}
+
+#submit {
+  display: block;
+  width: 90%;
+  padding: 0.5em 0;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  font-family: Montserrat, Arial;
+}
+
+#cart-icon {
+  width: 1em;
+  height: auto;
+  margin-right: 1em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 25px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    flex-direction: column;
+    height: 100vh;
+    align-content: center;
+  }
+
+  main {
+    width: 45%;
+    height: auto;
+    flex-wrap: nowrap;
+  }
+
+  main #perfume-image {
+    content: url(./images/image-product-desktop.jpg);
+    width: 50%;
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+  }
+
+  #text-perfume {
+    margin: 25px;
+    width: 50%;
+  }
+}
